@@ -8,7 +8,7 @@ public class AnagramCheck {
 	//Convert both strings to lowercase to ensure the comparison is case-insensitive.
 	//Remove any non-letter characters (if necessary).
 	//Sort the characters of both strings.
-	//Compare the sorted character arrays.
+	//Compare the sorted character arrays.   test
 	
 	public static void main(String args[]) {
 		
