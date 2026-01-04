@@ -31,9 +31,7 @@ public class MethodReferences {
 		//Reference to an Instance Method of an Arbitrary Object
 		List<String> names = List.of("Ravi", "Amit", "Suresh");
 		names.stream().map(String::toUpperCase).forEach(System.out::println);
-		
 		List<String> result =names.stream().map(String::toUpperCase).collect(Collectors.toList());
-		
 		System.out.println(result);
 		// Method Reference with Stream API
 		List<Integer> numbers = List.of(1, 2, 3, 4);

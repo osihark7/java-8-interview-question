@@ -5,7 +5,6 @@ package com.java8.question.java8;
  *  functional-style code by representing anonymous functions. They enable passing 
  *  code as parameters or assigning it to variables, resulting in cleaner and more 
  *  readable programs.
-
 Lambda expressions implement a functional interface (An interface with only one 
 abstract function) Enable passing code as data (method arguments).
 Allow defining behavior without creating separate classes.
