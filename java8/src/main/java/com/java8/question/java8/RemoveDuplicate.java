@@ -92,6 +92,15 @@ public class RemoveDuplicate {
 	         
 	        listOfString.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
 	        
-	        
+	        // Given an integer array, find sum and average of all elements?
+	        int[] number = new int[] {45, 12, 56, 15, 24, 75, 31, 89};
+	         
+	        int sum = Arrays.stream(number).sum();
+	         
+	        System.out.println("Sum = "+sum);
+	         
+	        double average = Arrays.stream(number).average().getAsDouble();
+	         
+	        System.out.println("Average = "+average);
 	    }
 }
