@@ -52,7 +52,29 @@ public class RemoveDuplicate {
 	        int[] cc = IntStream.concat(Arrays.stream(aa), Arrays.stream(bb)).sorted().distinct().toArray();
 	         
 	        System.out.println(Arrays.toString(cc));
-	    
-	}
-
+	        
+	        //How do you get three maximum numbers and three minimum numbers from the given list of integers?
+	        
+	        List<Integer> listOfIntegerss = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+	         
+	        //3 minimum Numbers
+	         
+	        System.out.println("-----------------");
+	         
+	        System.out.println("Minimum 3 Numbers");
+	         
+	        System.out.println("-----------------");
+	         
+	        listOfIntegerss.stream().sorted().limit(3).forEach(System.out::println);
+	         
+	        //3 Maximum Numbers
+	         
+	        System.out.println("-----------------");
+	         
+	        System.out.println("Maximum 3 Numbers");
+	         
+	        System.out.println("-----------------");
+	         
+	        listOfIntegerss.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
+	    }
 }
