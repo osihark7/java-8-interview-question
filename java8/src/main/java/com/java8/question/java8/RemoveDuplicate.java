@@ -102,5 +102,18 @@ public class RemoveDuplicate {
 	        double average = Arrays.stream(number).average().getAsDouble();
 	         
 	        System.out.println("Average = "+average);
+	        
+	        // How do you find common elements between two arrays?
+	        List<Integer> list1 = Arrays.asList(71, 21, 34, 89, 56, 28);
+	         
+	        List<Integer> list2 = Arrays.asList(12, 56, 17, 21, 94, 34);
+	         
+	        list1.stream().filter(list2::contains).forEach(System.out::println);
+	        
+	        // How do you find sum of first 10 natural numbers?
+	        
+	        int numsum = IntStream.range(1, 11).sum();
+	         
+	        System.out.println(numsum);
 	    }
 }
