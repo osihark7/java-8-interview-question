@@ -86,6 +86,11 @@ public class RemoveDuplicate {
 	         
 	        System.out.println(sumOfDigits);
 	        
+	        //Given a list of strings, sort them according to increasing order of their length? 
+	        
+	        List<String> listOfString = Arrays.asList("Java", "Python", "C#", "HTML", "Kotlin", "C++", "COBOL", "C");
+	         
+	        listOfString.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
 	        
 	        
 	    }
