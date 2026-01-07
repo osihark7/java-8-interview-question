@@ -42,6 +42,16 @@ public class RemoveDuplicate {
 	        int[] c = IntStream.concat(Arrays.stream(a), Arrays.stream(b)).sorted().toArray();
 	         
 	        System.out.println(Arrays.toString(c));
+	        
+	        // How do you merge two unsorted arrays into single sorted array without duplicates?
+	        
+	        int[] aa = new int[] {4, 2, 5, 1};
+	         
+	        int[] bb = new int[] {8, 1, 9, 5};
+	         
+	        int[] cc = IntStream.concat(Arrays.stream(aa), Arrays.stream(bb)).sorted().distinct().toArray();
+	         
+	        System.out.println(Arrays.toString(cc));
 	    
 	}
 
