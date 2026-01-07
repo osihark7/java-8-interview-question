@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class RemoveDuplicate {
 	
@@ -31,6 +32,16 @@ public class RemoveDuplicate {
 	        int min = listOfInteger.stream().min(Comparator.naturalOrder()).get();
 	         
 	        System.out.println("Minimum Element : "+min);
+	        
+	        // How do you merge two unsorted arrays into single sorted array using Java 8 streams?
+	        
+	        int[] a = new int[] {4, 2, 7, 1};
+	         
+	        int[] b = new int[] {8, 3, 9, 5};
+	         
+	        int[] c = IntStream.concat(Arrays.stream(a), Arrays.stream(b)).sorted().toArray();
+	         
+	        System.out.println(Arrays.toString(c));
 	    
 	}
 
