@@ -115,5 +115,8 @@ public class RemoveDuplicate {
 	        int numsum = IntStream.range(1, 11).sum();
 	         
 	        System.out.println(numsum);
-	    }
+	        
+	       // Validate user credentials where a username must start with admin_, and passwords must be at least 8 characters long.
+	   
+	}
 }
