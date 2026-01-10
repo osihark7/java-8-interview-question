@@ -17,5 +17,7 @@ public class RandomExample {
 	        RandomGenerator splitRng = RandomGeneratorFactory.of("L64X128MixRandom").create();
 	      
            System.out.println(splitRng);
+           
+           //hello
 	}
 }
