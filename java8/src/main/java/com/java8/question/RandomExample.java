@@ -3,6 +3,7 @@ package com.java8.question;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.random.RandomGenerator;
 import java.util.random.RandomGeneratorFactory;
 import java.util.stream.Collectors;
@@ -30,5 +31,15 @@ public class RandomExample {
                .sorted(Comparator.reverseOrder())
                .collect(Collectors.toList());
            System.out.println(sorted);
+           
+           //Count Character Frequency
+           String str = "hello";
+           Map<Character, Long> freq = str.chars()
+               .mapToObj(c -> (char)c)
+               .collect(Collectors.groupingBy(
+                   c -> c, 
+                   Collectors.counting()
+               ));
+           System.out.println(freq);
 	}
 }
