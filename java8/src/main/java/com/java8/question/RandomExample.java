@@ -1,7 +1,11 @@
 package com.java8.question;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 import java.util.random.RandomGenerator;
 import java.util.random.RandomGeneratorFactory;
+import java.util.stream.Collectors;
 
 public class RandomExample {
 
@@ -18,6 +22,13 @@ public class RandomExample {
 	      
            System.out.println(splitRng);
            
-           //hello
+           
+          // Sort List in Reverse Order
+           
+           List<String> names = Arrays.asList("John", "Adam", "Zack");
+           List<String> sorted = names.stream()
+               .sorted(Comparator.reverseOrder())
+               .collect(Collectors.toList());
+           System.out.println(sorted);
 	}
 }
