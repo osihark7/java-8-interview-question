@@ -1,7 +1,6 @@
 package com.java8.question.java8;
 
-
-/*ava lambda expressions, introduced in Java 8, allow developers to write concise,
+/*java lambda expressions, introduced in Java 8, allow developers to write concise,
  *  functional-style code by representing anonymous functions. They enable passing 
  *  code as parameters or assigning it to variables, resulting in cleaner and more 
  *  readable programs.

@@ -1,8 +1,4 @@
 package com.java8.question.java8;
-
-
-
-
 /*
  * 
  * Default methods in interfaces provide concrete implementations using default, ensuring backward 

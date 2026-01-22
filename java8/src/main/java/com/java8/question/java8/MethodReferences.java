@@ -1,7 +1,6 @@
 package com.java8.question.java8;
 
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 /*Method Reference : 
@@ -28,10 +27,10 @@ Method Reference is a shorthand way to refer to a method using :: and is used wi
 public class MethodReferences {
 
 	public static void main(String arg[]) {
-		//Reference to an Instance Method of an Arbitrary Object
+		// Reference to an Instance Method of an Arbitrary Object
 		List<String> names = List.of("Ravi", "Amit", "Suresh");
 		names.stream().map(String::toUpperCase).forEach(System.out::println);
-		List<String> result =names.stream().map(String::toUpperCase).collect(Collectors.toList());
+		List<String> result = names.stream().map(String::toUpperCase).collect(Collectors.toList());
 		System.out.println(result);
 		// Method Reference with Stream API
 		List<Integer> numbers = List.of(1, 2, 3, 4);

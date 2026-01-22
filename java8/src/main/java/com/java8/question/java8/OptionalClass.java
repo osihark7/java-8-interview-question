@@ -11,7 +11,6 @@ import java.util.Optional;
 public class OptionalClass {
   public static void main(String arg[]) {
 	  Optional<String> name = Optional.ofNullable("Java");
-
 	  name.ifPresent(System.out::println);
 	  
   }
