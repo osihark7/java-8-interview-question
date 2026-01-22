@@ -15,7 +15,7 @@ public class CharacterFrequency {
 		Map<Character, Long> freequency = str.chars().mapToObj(c -> (char) c)
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
-		// System.out.println(freequency);
+		// System.out.println(Frequency);
 
 		freequency.forEach((character, frequency) -> System.out.println(character + ": " + frequency));
 		

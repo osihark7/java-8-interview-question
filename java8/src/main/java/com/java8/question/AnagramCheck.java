@@ -23,7 +23,6 @@ public class AnagramCheck {
 	}
 
 	private static boolean checkAnagram(String str1, String str2) {
-
 		String sortedStr1 = str1.chars().mapToObj(c -> (char) c).sorted()
 				.collect(StringBuilder::new, StringBuilder::append, StringBuilder::append).toString();
 
@@ -32,5 +31,4 @@ public class AnagramCheck {
 
 		return sortedStr1.equals(sortedStr2);
 	}
-
 }

@@ -11,7 +11,6 @@ Allow defining behavior without creating separate classes.
  * Syntax: (params) -> expression or (params) -> { statements; }
  * */
 interface Add {
-
 	int addition(int a, int b);
 }
 
